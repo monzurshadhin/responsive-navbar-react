@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Mochiy+Pop+One&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e5e5;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header {
+  padding: 0 100px;
+  background-color: white;
+  height: 136px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 170px;
+  height: 62px;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: #959595;
+  font-size: 18px;
+}
+
+ul li {
+  padding: 5px;
+  margin-right: 70px;
+}
+
+.contact-button {
+  border: 2px solid #9d0a14;
+  padding: 15px 25px;
+  background-color: white;
+  font-size: 18px;
+  color: #9d0a14;
+}
+.button-section {
+  display: flex;
+  align-items: center;
+}
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  color: #9d0a14;
+  font-size: 30px;
+}
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  background-image: url("../../Images/hero 1 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 90px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+.mobile-menu li a {
+  color: #272727;
+  font-weight: 500;
+}
+.contact-button1 span {
+  margin-right: 180px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: white;
+  }
+  .header nav,
+  .button-section {
+    display: none;
+  }
+  .logo img {
+    width: 96px;
+    height: 34px;
+  }
+  ul li {
+    padding: 15px;
+  }
+
+  .header {
+    padding: 0 20px;
+    background-color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-button1 {
+    margin: 16px;
+    color: white;
+    background-color: #9d0a14;
+    width: 90%;
+    padding: 16px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+}
